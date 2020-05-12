@@ -6,26 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Plain JS Starter Kit</title>
     <!-- whatever stylesheets starts -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+
     <!-- whatever stylesheets ends -->
     <!-- inject:css -->
     <!-- endinject -->
+    <style>
+      object,
+      embed {
+        border: 1px solid red;
+        width: 600px;
+        height: 500px;
+      }
+    </style>
   </head>
   <body>
-    <button
-      class="btn btn-primary"
-      data-toggle="tooltip"
-      data-placement="right"
-      title="Tooltip on right"
+    <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" width="640" height="360" id="vlc" events="True">
+      <param name="MRL" value="rtsp://admin:admin123@10.3.72.239:554/cam/realmonitor?channel=2&subtype=0" />
+      <param name="ShowDisplay" value="True" />
+      <param name="AutoLoop" value="False" />
+      <param name="AutoPlay" value="False" />
+      <param name="Volume" value="50" />
+      <param name="toolbar" value="true" />
+      <param name="StartTime" value="0" />
+      <EMBED pluginspage="http://www.videolan.org"
+        type="application/x-vlc-plugin"
+        version="VideoLAN.VLCPlugin.2"
+        width="640"
+        height="360"
+        toolbar="true"
+        loop="false"
+        text="Waiting for video"
+        name="vlc">
+      </EMBED>
+    </object>
+    <!-- <object
+      width="300"
+      height="200"
+      classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
+      codebase="http://download.videolan.org/pub/videolan/vlc/last/win32/axvlc.cab"
+      id="vlc"
+      name="vlc"
+      class="vlcPlayer"
+      events="True"
     >
-      Hooray !!
-    </button>
+      <param
+        name="Src"
+        value="rtsp://admin:admin123@10.3.72.239:554/cam/realmonitor?channel=2&subtype=0"
+      />
+      <param name="ShowDisplay" value="True" />
+      <param name="AutoLoop" value="False" />
+      <param name="AutoPlay" value="true" />
+      <embed
+        id="vlcEmb"
+        type="application/x-google-vlc-plugin"
+        version="VideoLAN.VLCPlugin.2"
+        autoplay="yes"
+        loop="no"
+        width="300"
+        height="200"
+        target="rtsp://admin:admin123@10.3.72.239:554/cam/realmonitor?channel=2&subtype=0"
+        style="border: 1px solid #e5e5e5;"
+      />
+    </object> -->
+    <h1>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+      dignissimos.
+    </h1>
     <!-- whatever js starts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <!-- whatever js ends -->
     <!-- inject:js -->
     <!-- endinject -->
